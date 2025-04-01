@@ -116,7 +116,7 @@ function M.retrieve(not_math)
 
 
     s({ trig = "template", name = "template" }, {
-      t("\\documentclass[12pt,a4paper,reqno]{amsart} "),
+      t("\\documentclass[12pt,a4paper,reqno]{amsart} \n"),
       t("\\usepackage[swedish]{babel} "),
       t("\\usepackage{amsmath} "),
       t("\\usepackage{amsfonts} "),
