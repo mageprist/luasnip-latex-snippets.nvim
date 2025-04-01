@@ -89,7 +89,7 @@ function M.retrieve(not_math)
       t({"\\usepackage{amssymb} ", "\t"}),
       t({"\\usepackage{graphicx} ", "\t"}),
       t({"\\usepackage{mathrsfs} ", "\t"}),
-      t({"\%\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} ", "\t"}),
+      t({"\\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} ", "\t"}),
       t({"\\author{Gustaf Holmqvist} ", "\t"}),
       t({" ", "\t"}),
       t({" ", "\t"}),
