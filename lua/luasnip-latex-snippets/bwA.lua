@@ -51,27 +51,27 @@ function M.retrieve(not_math)
     s({ trig = "fie", name = "Anki field" }, {
       t({ "\\begin{field}", "\t" }),
       i(1),
-      t({ "", ".\\end{field}" }),
+      t({ "", "\\end{field}" }),
     }),
 
 
     s({ trig = "def", name = "Definition" }, {
       t({ "\\begin{definition}[]", "\t" }),
       i(1),
-      t({ "", ".\\end{definition}" }),
+      t({ "", "\\end{definition}" }),
     }),
 
 
     s({ trig = "exmp", name = "Example" }, {
       t({ "\\begin{exmp}[]", "\t" }),
       i(1),
-      t({ "", ".\\end{exmp}" }),
+      t({ "", "\\end{exmp}" }),
     }),
 
     s({ trig = "code", name = "code" }, {
       t({ "\\begin{lstlisting}[frame=single, language=C]", "\t" }),
       i(1),
-      t({ "", ".\\end{lstlisting}" }),
+      t({ "", "\\end{lstlisting}" }),
     }),
 
     s({ trig = "för", name = "Föredragande" }, {
@@ -80,7 +80,42 @@ function M.retrieve(not_math)
       t("}" ),
     }),
 
-    s({ trig = "för", name = "Föredragande" }, {
+    s({ trig = "bes", name = "Beslut" }, {
+      t("\\beslut{"),
+      i(1),
+      t("}" ),
+    }),
+
+    s({ trig = "yrk", name = "Yrkande" }, {
+      t("\\yrkande{"),
+      i(1),
+      t("}{}" ),
+    }),
+
+
+    s({ trig = "line", name = "Line" }, {
+      t("\\noindent\\rule{\\textwith}{0.4pt}"),
+    }),
+
+    s({ trig = "punkt", name = "Punkt" }, {
+      t("\\begin{punkt}{"),
+      i(1),
+      t({"}", "\t" }),
+      i(2),
+      t({ "", "\\end{punkt}" }),
+    }),
+
+
+    s({ trig = "under", name = "Underpunkt" }, {
+      t("\\begin{underpunkt}{"),
+      i(1),
+      t({"}", "\t" }),
+      i(2),
+      t({ "", "\\end{underpunkt}" }),
+    }),
+
+
+    s({ trig = "template", name = "Föredragande" }, {
       t({"\\documentclass[12pt,a4paper,reqno]{amsart} ", "\t"}),
       t({"\\documentclass[12pt,a4paper,reqno]{amsart} ", "\t"}),
       t({"\\usepackage[swedish]{babel} ", "\t"}),
@@ -94,7 +129,7 @@ function M.retrieve(not_math)
       t({" ", "\t"}),
       t({" ", "\t"}),
       t({"\\begin{document} ", "\t"}),
-      t({"\\title{$1} ", "\t"}),
+      t({"\\title{ } ", "\t"}),
       t({"\\maketitle ", "\t"}),
       t({" ", "\t"}),
       i(1),
