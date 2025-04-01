@@ -46,6 +46,41 @@ function M.retrieve(not_math)
       i(0),
       t({ "", ".\\end{align*}" }),
     }),
+
+
+    s({ trig = "fie", name = "Anki field" }, {
+      t({ "\\begin{field}", "\t" }),
+      i(1),
+      t({ "", ".\\end{field}" }),
+    }),
+
+
+    s({ trig = "def", name = "Definition" }, {
+      t({ "\\begin{definition}[]", "\t" }),
+      i(1),
+      t({ "", ".\\end{definition}" }),
+    }),
+
+
+    s({ trig = "exmp", name = "Example" }, {
+      t({ "\\begin{exmp}[]", "\t" }),
+      i(1),
+      t({ "", ".\\end{exmp}" }),
+    }),
+
+    s({ trig = "code", name = "code" }, {
+      t({ "\\begin{lstlisting}[frame=single, language=C]", "\t" }),
+      i(1),
+      t({ "", ".\\end{lstlisting}" }),
+    }),
+
+    s({ trig = "för", name = "Föredragande" }, {
+      t("\\textit{Föredragande: }"),
+      i(1),
+      t("\\}" ),
+    }),
+
+
   }
 end
 
