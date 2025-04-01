@@ -75,12 +75,32 @@ function M.retrieve(not_math)
     }),
 
     s({ trig = "för", name = "Föredragande" }, {
-      t("\\textit{Föredragande: }"),
+      t("\\textit{Föredragande: "),
       i(1),
-      t("\\}" ),
+      t("}" ),
     }),
 
-
+    s({ trig = "för", name = "Föredragande" }, {
+      t({"\\documentclass[12pt,a4paper,reqno]{amsart} ", "\t"}),
+      t({"\\documentclass[12pt,a4paper,reqno]{amsart} ", "\t"}),
+      t({"\\usepackage[swedish]{babel} ", "\t"}),
+      t({"\\usepackage{amsmath} ", "\t"}),
+      t({"\\usepackage{amsfonts} ", "\t"}),
+      t({"\\usepackage{amssymb} ", "\t"}),
+      t({"\\usepackage{graphicx} ", "\t"}),
+      t({"\\usepackage{mathrsfs} ", "\t"}),
+      t({"\%\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} ", "\t"}),
+      t({"\\author{Gustaf Holmqvist} ", "\t"}),
+      t({" ", "\t"}),
+      t({" ", "\t"}),
+      t({"\\begin{document} ", "\t"}),
+      t({"\\title{$1} ", "\t"}),
+      t({"\\maketitle ", "\t"}),
+      t({" ", "\t"}),
+      i(1),
+      t({" ", "\t"}),
+      t({"\\end{document} ", "\t"}),
+    }),
   }
 end
 
