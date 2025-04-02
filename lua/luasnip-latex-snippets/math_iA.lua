@@ -94,6 +94,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "rd", name = "to the ... power ^{()}" }, "^{($1)}$0 "),
     parse_snippet({ trig = "cb", name = "Cube ^3" }, "^3 "),
     parse_snippet({ trig = "sr", name = "Square ^2" }, "^2"),
+    parse_snippet({ trig = "sc", name = "Supercube ^4" }, "^4"),
 
     parse_snippet({ trig = "EE", name = "exists" }, "\\exists "),
     parse_snippet({ trig = "AA", name = "forall" }, "\\forall "),
@@ -105,7 +106,6 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "yjj", name = "yj" }, "y_{j}"),
     parse_snippet({ trig = "xp1", name = "x" }, "x_{n+1}"),
     parse_snippet({ trig = "xmm", name = "x" }, "x_{m}"),
-    parse_snippet({ trig = "R0+", name = "R0+" }, "\\mathbb{R}_0^+"),
 
     parse_snippet({ trig = "notin", name = "not in " }, "\\not\\in "),
 
@@ -115,7 +115,6 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "...", name = "ldots", priority = 100 }, "\\ldots "),
     parse_snippet({ trig = "!>", name = "mapsto" }, "\\mapsto "),
     parse_snippet({ trig = "iff", name = "iff" }, "\\iff"),
-    parse_snippet({ trig = "siff", name = "short iff", priority = 100}, "\\Leftrightarrow"),
     parse_snippet({ trig = "ooo", name = "\\infty" }, "\\infty"),
     parse_snippet({ trig = "rij", name = "mrij" }, "(${1:x}_${2:n})_{${3:$2}\\in${4:\\N}}$0"),
     parse_snippet({ trig = "nabl", name = "nabla" }, "\\nabla "),
@@ -126,6 +125,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "\\\\\\", name = "setminus" }, "\\setminus"),
     parse_snippet({ trig = "->", name = "to", priority = 100 }, "\\to "),
     parse_snippet({ trig = "-->", name = "long to", priority = 200 }, "\\longrightarrow "),
+
     parse_snippet({ trig = "eps", name = "vareps", priority = 200 }, "\\vareps "),
 
     parse_snippet({ trig = "letw", name = "let omega" }, "Let $\\Omega \\subset \\C$ be open."),
@@ -181,6 +181,23 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "invs", name = "inverse" }, "^{-1}"),
     parse_snippet({ trig = "~~", name = "~" }, "\\sim "),
     parse_snippet({ trig = "conj", name = "conjugate" }, "\\overline{$1}$0"),
+
+    parse_snippet({ trig = "Cok", name = "Cokernel" }, "\\text{Coker}($1)"),
+    parse_snippet({ trig = "Ker", name = "Kernel" }, "\\text{Ker}($1)"),
+    parse_snippet({ trig = "Im", name = "Image" }, "\\text{Im}($1)"),
+
+    parse_snippet({ trig = "cov", name = "covariance" }, "\\text{Cov}($1)"),
+    parse_snippet({ trig = "=-", name = "kongruens" }, "\\equiv"),
+
+
+
+    parse_snippet({ trig = "o+", name = "oplus" }, "\\oplus"),
+    parse_snippet({ trig = "ox", name = "tensor" }, "\\otimes"),
+
+    parse_snippet({ trig = "vER", name = "verbose" }, "\\verb+$1+"),
+
+    parse_snippet({ trig = "dd", name = "dell" }, "\\partial"),
+    parse_snippet({ trig = "iso", name = "isomorphic" }, "\\cong"),
   }
 end
 

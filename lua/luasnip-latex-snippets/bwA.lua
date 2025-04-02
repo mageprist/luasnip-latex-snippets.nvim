@@ -128,7 +128,7 @@ function M.retrieve(not_math)
       t({" ", ""}),
       t({" ", ""}),
       t({"\\begin{document} ", ""}),
-      t({"\\title{", ""}),
+      t("\\title{"),
       i(1),
       t({"}", ""}),
       t({"\\maketitle ", ""}),

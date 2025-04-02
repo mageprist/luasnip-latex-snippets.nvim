@@ -22,7 +22,7 @@ function M.retrieve(is_math)
     with_priority({ trig = "hat", name = "hat" }, "\\hat{$1}$0 "),
     with_priority({ trig = "bar", name = "bar" }, "\\overline{$1}$0 "),
 
-    parse_snippet({ trig = "inf", name = "\\infty" }, "\\infty"),
+    parse_snippet({ trig = "ooo", name = "\\infty" }, "\\infty"),
     parse_snippet({ trig = "inn", name = "in " }, "\\in "),
     parse_snippet({ trig = "SI", name = "SI" }, "\\SI{$1}{$2}"),
   }
