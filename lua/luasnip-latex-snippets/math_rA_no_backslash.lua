@@ -28,12 +28,12 @@ local build_with_priority = function(trig, node, priority, name)
   end
 end
 
-local vargreek_postfix_completions = function()
-  local re = "varepsilon|varphi|varrho|vartheta"
-
-  local build = build_with_priority(postfix_trig, postfix_node, 200)
-  return vim.tbl_map(build, vim.split(re, "|"))
-end
+-- local vargreek_postfix_completions = function()
+--   local re = "varepsilon|varphi|varrho|vartheta"
+--
+--   local build = build_with_priority(postfix_trig, postfix_node, 200)
+--   return vim.tbl_map(build, vim.split(re, "|"))
+-- end
 
 -- local greek_postfix_completions = function()
 --   local re =
@@ -65,8 +65,8 @@ function M.retrieve(is_math)
 
   s = ls.extend_decorator.apply(ls.snippet, M.decorator) --[[@as function]]
 
-  vim.list_extend(snippets, vargreek_postfix_completions())
-  vim.list_extend(snippets, greek_postfix_completions())
+  -- vim.list_extend(snippets, vargreek_postfix_completions())
+  -- vim.list_extend(snippets, greek_postfix_completions())
   vim.list_extend(snippets, postfix_completions())
   vim.list_extend(snippets, { build_snippet(postfix_trig, postfix_node, "q?quad", 200) })
 
