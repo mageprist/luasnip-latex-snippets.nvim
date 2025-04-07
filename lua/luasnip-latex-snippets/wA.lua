@@ -15,6 +15,7 @@ function M.retrieve(not_math)
     parse_snippet({ trig = "itm", name = "Item" }, "\\item $0"),
     parse_snippet({ trig = "item", name = "Itemize" }, "\\begin{itemize}\n\t\\item $0 \n\\end{itemize}"),
     parse_snippet({ trig = "enum", name = "Enumerate" }, "\\begin{enumerate}\n\t\\item $0 \n\\end{enumerate}"),
+    parse_snippet({ trig = "iT", name = "italic" }, "\\textit{$0}"),
   }
 end
 

@@ -232,6 +232,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "Im", name = "Image" }, "\\text{Im}($1)"),
 
     parse_snippet({ trig = "cov", name = "covariance" }, "\\text{Cov}($1)"),
+    parse_snippet({ trig = "var", name = "variance" }, "\\text{Var}($1)"),
     parse_snippet({ trig = "=-", name = "kongruens" }, "\\equiv"),
 
 
