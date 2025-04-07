@@ -35,13 +35,13 @@ local vargreek_postfix_completions = function()
   return vim.tbl_map(build, vim.split(re, "|"))
 end
 
-local greek_postfix_completions = function()
-  local re =
-    "[aA]lp|[bB]et|[cC]hi|[dD]el|Eps|[gG]am|[iI]ot|[kK]ap|[lL]am|[mM]u|[nN]u|[oO]me|[pP]hi|[pP]i|[pP]si|[rR]ho|[sS]ig|[tT]au|[tT]he|[zZ]et|[eE]ta"
-
-  local build = build_with_priority(postfix_trig, postfix_node, 200)
-  return vim.tbl_map(build, vim.split(re, "|"))
-end
+-- local greek_postfix_completions = function()
+--   local re =
+--     "[aA]lp|[bB]et|[cC]hi|[dD]el|Eps|[gG]am|[iI]ot|[kK]ap|[lL]am|[mM]u|[nN]u|[oO]me|[pP]hi|[pP]i|[pP]si|[rR]ho|[sS]ig|[tT]au|[tT]he|[zZ]et|[eE]ta"
+--
+--   local build = build_with_priority(postfix_trig, postfix_node, 200)
+--   return vim.tbl_map(build, vim.split(re, "|"))
+-- end
 
 local postfix_completions = function()
   local re = "sin|cos|tan|csc|sec|cot|ln|log|exp|star|perp|int"
