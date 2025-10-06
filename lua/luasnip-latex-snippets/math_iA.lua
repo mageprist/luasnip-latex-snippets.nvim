@@ -182,6 +182,7 @@ function M.retrieve(is_math)
 
     parse_snippet({ trig = "stt", name = "text subscript" }, "_\\text{$1} $0"),
     parse_snippet({ trig = "tt", name = "text" }, "\\text{$1}$0"),
+    parse_snippet({ trig = "tb", name = "text bf" }, "\\textbf{$1}$0"),
 
     parse_snippet({ trig = "xx", name = "cross" }, "\\times "),
 

@@ -1,0 +1,1 @@
+grep -Rnw . -e 'pattern'
